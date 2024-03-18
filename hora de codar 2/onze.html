@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Calculadora</title>
+</head>
+<body>
+    <script>
+
+    // Uma micro calculadora
+    // Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes
+    // operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+    // O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. 
+    // Observação: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações
+
+        var valor1 = parseInt(prompt("Digite o primeiro valor:"));
+        var valor2 = parseInt(prompt("Digite o segundo valor:"));
+
+        var operacao = parseInt(prompt("Escolha a operação:\n1. Adição\n2. Subtração\n3. Divisão\n4. Multiplicação"));
+
+        switch (operacao) {
+            case 1:
+                document.write("Resultado da adição: " + (valor1 + valor2));
+                break;
+            case 2:
+                document.write("Resultado da subtração: " + (valor1 - valor2));
+                break;
+            case 3:
+                document.write("Resultado da divisão: " + (valor1 / valor2));
+                break;
+            case 4:
+                document.write("Resultado da multiplicação: " + (valor1 * valor2));
+                break;
+            default:
+                document.write("Operação inválida.");
+        }
+    </script>
+</body>
+</html>

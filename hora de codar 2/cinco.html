@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de 6 Valores</title>
+</head>
+<body>
+    <script>
+        // Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números informados e 
+        //escreva a média aritmética desses valores lidos.
+
+
+        var totalValores = 6;
+        var soma = 0;
+
+        for (var i = 1; i <= totalValores; i++) {
+            var valor = parseFloat(prompt("Digite o " + i + "º valor:"));
+            soma += valor;
+            document.write("Valor " + i + ": " + valor + "<br>");
+        }
+
+        var media = soma / totalValores;
+
+        document.write("<br>A média dos valores é: " + media);
+    </script>
+</body>
+</html>

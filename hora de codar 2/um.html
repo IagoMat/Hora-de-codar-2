@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<script>
+
+    // Escreva um programa em que o usuário informe dois números utilizando o "prompt". Então escreva em tela o maior deles.
+
+    var numero1 = parseFloat(prompt("Digite o primeiro número:"));
+    var numero2 = parseFloat(prompt("Digite o segundo número:"));
+
+    var maiorNumero;
+    if (numero1 > numero2) {
+        maiorNumero = numero1;
+    } else {
+        maiorNumero = numero2;
+    }
+
+    document.write("O maior número é: " + maiorNumero);
+</script>
+<body>
+
+</body>
+</html>
